@@ -1,9 +1,12 @@
 
 xsltproc = xsltproc
+# usage: xsltproc input.xsl input.xml > output.html
 
-mm2s5: xslt/freemind2s5.xsl demo.mm
-	$(xsltproc) xslt/freemind2s5.xsl demo.mm > demo.html
+mm2s5: xslt/mm2s5.xsl demo/slides.mm
+	$(xsltproc) $^ > output/$@.html
 
+mm2faq: xslt/mm2faq.xsl demo/faq.mm
+	$(xsltproc) $^ > output/$@.html
 
 mm-strip:
 	bin/mm-strip.sed demo.mm

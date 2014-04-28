@@ -1,0 +1,21 @@
+
+h2 {
+  background-color:#eeeeee;
+  line-height:130%;
+}
+
+
+
+h3 {
+  color:#3399ff;
+}
+
+.answer {
+  padding:0.5em;
+}
+
+#footer {
+  margin:1em auto;
+  color:gray;
+  text-align:center;
+}
